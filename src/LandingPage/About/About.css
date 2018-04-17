@@ -1,0 +1,44 @@
+.about{
+    background: rgb(240, 240, 240);
+    height: 90%;
+}
+.about .col-xs-4{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+.about .icon{
+    height: 8em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+}
+
+.flipCircle{
+    margin-top: 48%;
+    border-radius: 100%;
+    background: #dddddd;
+    height: 18em;
+    width: 18em;
+    padding-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 0.3s;
+}
+.flipCircle:hover{
+    height: 20em;
+    width: 20em;
+    margin-top: 46%;
+    background: #cccccc;
+    padding-top: 17%;
+}
+.flipCircle.back{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flipCircle.back span{
+    width: 10em;
+}

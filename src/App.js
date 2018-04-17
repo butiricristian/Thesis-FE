@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {NavbarComponent} from './Navbar/NavbarComponent'
 import './App.css';
-import {LandingScreen} from "./LandingScreen/LandingScreen";
-import {Login} from "./Login/Login";
-import {About} from "./About/About";
+import {LandingScreen} from "./LandingPage/LandingScreen/LandingScreen";
+import {Login} from "./LandingPage/Login/Login";
+import {About} from "./LandingPage/About/About";
 import {Parallax} from "react-spring";
 
 class App extends Component {
