@@ -1,0 +1,153 @@
+.graphNode{
+    border-radius: 100%;
+    font-size: 20px;
+    height: 3em;
+    width: 3em;
+    background: white;
+    border: solid 0.3em black;
+    text-align: center;
+    padding-top: 8px;
+    display: inline-block;
+    position: absolute;
+}
+.graphNode:hover{
+    cursor: grab;
+}
+.sidebarStyle{
+    width: 20em;
+    padding-top: 3.6em;
+    overflow-x: hidden;
+    position: relative;
+}
+.contentStyle{
+    margin-top: 4em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.sidebarOpener{
+    transform: rotate(270deg);
+    position: absolute;
+    left: -31px;
+    top: 31px;
+    background: antiquewhite;
+    padding: 2px;
+    border-radius: 5px;
+}
+.sidebarOpener:hover{
+    cursor: pointer;
+}
+
+.react-contextmenu {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    color: #373a3c;
+    font-size: 16px;
+    margin: 2px 0 0;
+    min-width: 160px;
+    outline: none;
+    opacity: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    text-align: left;
+    transition: opacity 250ms ease !important;
+}
+
+.react-contextmenu.react-contextmenu--visible {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 9999;
+}
+
+.react-contextmenu-item {
+    background: 0 0;
+    border: 0;
+    color: #373a3c;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 3px 20px;
+    text-align: inherit;
+    white-space: nowrap;
+}
+
+.react-contextmenu-item.react-contextmenu-item--active,
+.react-contextmenu-item.react-contextmenu-item--selected {
+    color: #fff;
+    background-color: #20a0ff;
+    border-color: #20a0ff;
+    text-decoration: none;
+}
+
+.react-contextmenu-item.react-contextmenu-item--disabled,
+.react-contextmenu-item.react-contextmenu-item--disabled:hover {
+    background-color: transparent;
+    border-color: rgba(0,0,0,.15);
+    color: #878a8c;
+}
+
+.react-contextmenu-item--divider {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    cursor: inherit;
+    margin-bottom: 3px;
+    padding: 2px 0;
+}
+.react-contextmenu-item--divider:hover {
+    background-color: transparent;
+    border-color: rgba(0,0,0,.15);
+}
+
+.react-contextmenu-item.react-contextmenu-submenu {
+    padding: 0;
+}
+
+.react-contextmenu-item.react-contextmenu-submenu > .react-contextmenu-item {
+}
+
+.react-contextmenu-item.react-contextmenu-submenu > .react-contextmenu-item:after {
+    content: "▶";
+    display: inline-block;
+    position: absolute;
+    right: 7px;
+}
+
+.example-multiple-targets::after {
+    content: attr(data-count);
+    display: block;
+}
+
+.panel-heading{
+    border-radius: 0;
+}
+.panel{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.panel-body{
+    padding:5px;
+}
+.graphNodeList{
+    border-radius: 100%;
+    height: 3em;
+    width: 3em;
+    background: white;
+    border: solid 0.5em black;
+    text-align: center;
+    padding-top: 4px;
+    display: inline-block;
+}
+.no-padding{
+    padding: 0;
+}
+.edge{
+    width: 100px;
+    height: 10px;
+    border: solid thin red;
+    position: absolute;
+    background-color: red;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: -1;
+}

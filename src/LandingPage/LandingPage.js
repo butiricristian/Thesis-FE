@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import {Parallax} from "react-spring";
 import {LandingScreen} from "./LandingScreen/LandingScreen";
 import {About} from "./About/About";
