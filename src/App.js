@@ -12,7 +12,7 @@ class App extends Component {
                 <NavbarComponent/>
                 <Switch>
                     <Route exact path="/" component={LandingPage}/>
-                    <Route path="/upload-problem" component={UploadProblemPage}/>
+                    <Route exact path="/upload-problem" component={UploadProblemPage}/>
                 </Switch>
             </div>
         );

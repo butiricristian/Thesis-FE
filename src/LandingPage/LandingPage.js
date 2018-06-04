@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import {Parallax} from "react-spring";
 import {LandingScreen} from "./LandingScreen/LandingScreen";
 import {About} from "./About/About";
-import {Login} from "./Login/Login";
+import {Footer} from "./Footer/Footer";
 
 export class LandingPage extends Component {
     render() {
         return (
-            <Parallax pages={2.7}>
+            <Parallax pages={2.75}>
                 <Parallax.Layer
                     offset={0}
                     speed={-0.2}
@@ -26,7 +26,7 @@ export class LandingPage extends Component {
                     speed={-0.2}
                     style={{zIndex: 2}}
                 >
-                    <Login/>
+                    <Footer/>
                 </Parallax.Layer>
             </Parallax>
         );

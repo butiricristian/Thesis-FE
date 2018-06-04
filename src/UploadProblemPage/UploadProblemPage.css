@@ -1,0 +1,18 @@
+.background{
+    background: #f8f8f8;
+    margin-top: 3.6em;
+    padding-top: 2em;
+    height: 93vh;
+    font-family: 'Raleway', sans-serif;
+}
+.main-panel{
+    background: white;
+}
+.upload-problem-tabs.panel-heading{
+    padding: 0;
+    background-image: none;
+    border: none;
+}
+.upload-problem-tabs.panel-heading a{
+    border-radius: 0;
+}

@@ -1,8 +1,26 @@
 import React, { Component } from 'react';
 import {Nav, Navbar, NavItem} from "react-bootstrap";
 import './NavbarComponent.css';
+import {Login} from "./Login/Login";
 
 export class NavbarComponent extends Component {
+    constructor(){
+        super();
+        this.state = {
+            openModal: false
+        }
+    }
+
+    handleC(){
+        this.setState({openModal: false});
+    }
+
+    handleOpen(){
+        if(this.state.openModal === false) {
+            this.setState({openModal: true});
+        }
+    }
+
     render() {
         return (
             <Navbar collapseOnSelect fixedTop fluid className="myNavbar">
@@ -29,8 +47,9 @@ export class NavbarComponent extends Component {
                         {/*</NavDropdown>*/}
                     </Nav>
                     <Nav pullRight>
-                        <NavItem eventKey={2} href="#signIn">
+                        <NavItem eventKey={2} href="#" onClick={this.handleOpen.bind(this)}>
                             SIGN IN
+                            <Login openModal={this.state.openModal} handleClose={this.handleC.bind(this)}/>
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>

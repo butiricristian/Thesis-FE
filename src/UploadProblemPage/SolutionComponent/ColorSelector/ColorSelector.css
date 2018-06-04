@@ -1,0 +1,14 @@
+.color-picker-panel .modal-body{
+    padding: 10px !important;
+    text-align: center;
+}
+.color-picker-panel .modal-header{
+    background: #20a0ff;
+    color: whitesmoke;
+    font-size: 20px;
+    transition: background-color 0.5s;
+}
+.color-picker-panel .circle-picker{
+    margin-left: auto;
+    margin-right: auto !important;
+}
