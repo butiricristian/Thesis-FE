@@ -132,8 +132,9 @@
     border-radius: 100%;
     height: 3em;
     width: 3em;
-    background: white;
-    border: solid 0.5em black;
+    color: #fff;
+    background-color: #20a0ff;
+    border: solid 0.5em #20a0ff;
     text-align: center;
     padding-top: 4px;
     display: inline-block;

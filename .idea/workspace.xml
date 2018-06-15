@@ -2,263 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69daea5-9de6-4358-b201-e94d06cd7c29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LandingPage/Footer/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LandingPage/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/ColorSelector/ColorSelector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/ColorSelector/ColorSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/cristian_butiri.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/LoginService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/ProblemService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0222a744fb71ab4e25e0737539aa9275ca1961af.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/034c81ce7d56cd292b42c4c42180c8b09b1a96b7.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0353f2dc9a5c30e01b68f73ea75e08403089a2b1.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0411fc1deccf8730865c654e1f6ecb6f1835d91b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/041de5c7f357df9b8c87e0b9b76f0704eae50c84.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/06e49063c4c662108c1bc8e74ace7dece38aaf44.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/06e4b42c43ccd55ae0722abd79a8ab1ee9910bd4.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/07c9106e2e3b26171df97b9f6702ebaa6272c233.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0cbbc8adf309fe73af25d42b3aed3777c80dd8e9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0d8bd9ca6658fb1866e0d40a1e37c3e50d51bada.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0e3045b24212f9995c3e5bc375f2b6735e492406.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0f12c5e951a85e675abc0ac30b0527099fd91614.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0f95f9a3db1f2874af2b9efd232f9a753e2a8a1a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0f96ccfca5c4e7dc5c58e42471152952b1e9cb7c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/10c93fd327433dc55d4ddf9196c9239ba5ae68ad.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/11585fee48069906bc3e27d3f51c9cf2249dfbe7.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/131b988c56fd8433e57fd1b74311d9bc92698ab3.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1649ff8057829d9ff09f34896fd71b6cf3bdabde.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/175bc56a48136d2422b2f57649fa5a234cb56077.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/17eb751444f47d8fcaf487121bc86188d843929b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/18404887f2448d458e0e33a53baf44fcbf866e7b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/19ae04bea209b92c98420771c6c66dcc85b43e2f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1a81da490fa1535754bd6b34b6ca3930b9670631.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1b7e17ef135112ca392dd5d77acf50d2c0c318df.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1c7ace6bd21de01419aba7fce265b7efc1edfb82.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1ca27375cb8b2e70c56512cb5bda1f33f2059249.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1ce4990e81ed060a7661b1f2bc68e354b3851672.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1e511970f697a108b05db2bb1989b1f417a03f2c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/203c020e2b1993ea7aca6ce4ad2629b1b0f2ab32.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2083640ece43ceb808349efee0937ed8a1b6b69a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/20876844cf44eec24c4d6ef1cb8784e245b2a511.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/228fbf2910aa2bb09cde6597fa486ec70ddde7a0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2301bf68eff7332effd1ab38e81d97e82471d515.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/23872dde78ae138c05370888c4887da34a5f5853.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/23fce8550da4bebd2fca9b14b007b7aaafeddc02.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/25dfadd38ed9b79fe011588ba3f0815d212d2ae9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/261e62f41d8de0688178daa2011623c3ccecd82a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/26e35a7a6c3b6027977faca18c7639c2bfc3359b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/272c5182acf8bc1d63d921bc58d728a15efa93fa.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/274388dd2faddb4225e0ec4cc89d2f9cab14180c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2767ea677d54862d2c4d009dad9ebc6b82bdc9aa.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2880accd025b0603afa2c04c29f6d7841406c8c9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/29de2fbd394df9e5f699fde53f5c34d36589b336.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2a8ca04f0bed01e3cbf09028d3ec001edecff066.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2af2a498470f9f5cc0e3af6d7e7fb669efc89578.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2e7c2db3f3c50ff3a12fb2a2a7e39a9708a7cbc5.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2e8a599cb782fe9d9a2d6690c311f9d1fee30ef3.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2f593c71bdd183367a49a4c35969247cde28ffad.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/2f93a24d612cf4195b1edb6f7ba23febbcf4d388.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3030e237c060d62a8a928146e956a30b48a4b97e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3064897024a73b1dab4f41bf83b07c86426058aa.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/30b7adcd2537068f923fb899add19bd01b1877ae.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/349bff7fdeb371a93866574efc878e59ac359bd9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3662c4ec7c8503aa896aee9b8e41a6f5783d1bea.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3809b12eb2a08e8f82fa06137be3b8ac914c2252.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/396f72f535b78039889202229dbd7090322dc1f5.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/39b9a04b577b0ca92be27b36c5cd1c45a5126925.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3aaee426043d80f23aacb74d1f74e8f12d3a3a30.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b493c242a91c8d1f7ea29517b86d28023d224a8.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b74cf0e985e6b52d9be60744992c77ccbd9d928.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/421094f7a36e3f96ad3da34bd8fd6d25f73a61dd.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4219219f4a13512f30b26944a1b073ae76ee017c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4298c250c04a3b97eb3d8a6f395f1a8d0b76f3ab.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/43d400a9fae2464e56fd19c93cf5d13cf28aa07b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/460e32b262899646de078465d81578b7c80a0e9d.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4754ade34c1d809ac6ce7b2ee96aef62aae93f15.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/477a56b697e8b4e97f695913f93ad6d409317a98.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/494a1836f757233672986d54dfecee90d97c29e1.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4a34d44da69255f32471bc56b116737ab9f5f650.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4ad635cbb78a24e07408fcec5664d84a6d85421e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4b4cd2bdab7e9071a8c9fbc04b64dbbcd85ff5b0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4c7ce46f41b1d9f08ae33319298c4f96e486a4ff.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4d4f81dd4832c783b4fb1feca37d62bb1c13d318.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4d56e883487b53e1a87c408a6fa015622ec7f7b4.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4d6758581dc2a7cd8dabb3efbdca2062dfd0307e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/50e2fe9a7afe78ba188715900c9b37733f60a0fe.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/519a29e7e89f1396f72eaac3c40c5c1f9e0d2fbb.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/519a30607d6434da8af2ca8765ea0b1115e29db5.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/51d530a265cba4008ff0ca6c19594c99f21dce6d.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/51dc04f067acb05ff17d4e1effc7d6e761f6dfcb.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/52c598c6c588269314c9b79d627d2437ff30dd4a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/547f018b96f394c168eeed87888d9d7223427755.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/54e682012ad28f824ae7dbc6b0a1d06120416741.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/55439e5d8ef8c97384eb5108a251818c303ef0fd.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/55f756cc09b0bc2a6e4a3c4143f436439e6cbb60.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/57240cada1c74f4cc16468812678818ba2e01969.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/57cf0e623661cab03d1b0ad4f84427b5d51b2e8f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5a38458ee3d8a4086e95c16d5ccac6dd04def0ec.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5c9370cda7b6c55e0b75adf4921aa753491ee695.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5d08bbf28bddc08fdde9118a7156b885c36f134d.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6330d151519ebd64c73a7caca88dd370dde3d0b2.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6382840271f87717a7dc9d127f76c8823bd91450.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6680ddd464c64e85feaf124d1727e62e87ce7acf.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/669f8f2bb5e7c87e6bb781511310277232b63d94.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6862d1b52f9326315bbdbe282bb04c429de699ce.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/69c54243a3fda5de525fb28c71606aa19ccd3857.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/69ff8d59b5a6d8e847ac1eee8016e3838ef9e1bb.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6b125379dd289b8db000b16b6f633ecee22dab4a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6c22d8c9ec71400e996f7bbf584c86bbe166c92d.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/6c963dc5a4522208b28092ddbb483f3e7279119b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7007372574dd5e716e4139c0355321a67a25da6b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/714ca64c44a7a6937d793e8cc2f2b2946991fbe2.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/71fb4a0ddbc4684709f71459cb8be4362bfcb17c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/72012388378adf0300a8a8fcc542b05c026201b2.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/745fb6d324a120d9d59cf8fcbf000fcaa5f3c202.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/74bedab7918606cfdbe47c31e57f62cb920f98b5.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/75631385ba58346b87a561e58ce0187d9628147a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/75c41aaa87e8c0697296a7660ca7d7e1755b5b49.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/75d8a2d106132a4bab56fa072eeb41ee33ddc9ec.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/76b5e656ee39369075c4480d6e89e2c3f9b75a22.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/79888966aec2b8d8477f8dab1ff40335d59b0311.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7bca1dc1271014ee6a0e44aef63bb6ad93171513.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7cc29cc936446cb7f3e5fd3e52ce1c7a78ca9c72.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7d1dcc57d3eb5b5557c0045f6bd394b9f7f90795.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7e1eabffe6cf3e20406d22fa199eb80209c226bd.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7ec6830e85954667b45f1102db79b231bcd07ab8.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7f25c310edf857cea9f4dc8640da74f864e4b9a0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7fb252748b6a8196903274fef8ff5c62d708055c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8016b51841526c53a57e8d13491eb7cd6a018fb8.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/80747b87ac3f2c88f62b4a52b7907e55f3e97fe0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/81401cab300daaf295bfbeb99e54a0a0bccf08b0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8503982cbcefb46d00cac4adba108b1f429749e9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/85cb6f70b62bdfb6ca907dd38f59e484f5e4b435.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/872a292640a9f448552bee696a23c3c1ee57c633.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/87f921628499a2ba332807fe049ecd10bc42daa5.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8ce749411724a44848c962694bb51417bf7d92aa.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8e039269ab81a540a049b71ad36f692c3ec39045.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/91d9d4dd2b195f89845b17b22bfa7f633071d871.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/925c214b941a3efba60c54ea59159de27c724e66.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/94e8cb977cad427822c9b36893a232606baf25fe.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/965b42c5b154a6f0660a9f26d3583337ae2a3e07.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/965f18ab9e44be08356197ca4c00a1c0cdc744b2.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/972dd02a69cce38cd056bcfec1107d0c193d051a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/98d50a05953bbfaadb92cea010beac4d78daa1d9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/99689ff8bd858c21aa5d9194adf257e420dc6fbf.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/99f81429a150fd407174d620450db8021851b29d.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9a08cc1f8a27cc2625b85fa70caf280d0ab48b52.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9c12323dd6bf3f55ca0882e20eb2cc780912d6f4.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9c2254497eb2b31a2485dbade316775ce7577e90.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9d42db615114df26421ea669e364c2e53706c274.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9d8fce085a4cf05b4e9f31be8061104269b095cc.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9efe0d1b441bed40c6272be225a6294538e9a843.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9f91af8207d95f78199dd45847754702662bfe6c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a109b20aa059502928fdcfb78709383a12bc67f4.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a23d4c457b0bc97f281184bfaa2bb9b87643d4c8.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a2c99b2ea6b44ac8644b9f31c91f5f17099a4922.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a302d97cc5067eb8cd0830b8573183e3a8d6bc60.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a356156735b2e3e865a66088422baed4da597099.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a3cf7f061e86bf7031bd3a829a575c3ecd000789.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a47712ed6c962dd842bdf138f28d3bdfe8e1f314.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a57dadf208b801664dc0a88476fef1c53699c7cc.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a61fb6c1d2bfc4db9a30c0e92f16e280173f5913.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a83a6a0cf16bb32b0d4eed01cf0671186b97ff22.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a918250bd7ece955130ff7ace74192d4c7208f6a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a9a67f348f685c0d2a522569cce9149062deb31e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a9acaeec92e3f4fa7cffec4593e1c365cc9fd063.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/aa28ce9ff8e7ae75c4a9b4e7b74ea0b7c6212512.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/abd28dff6b625fbb6b4e754c5a0b40528279cecd.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ac1a2cd64adcb80544cbc429718e996270146cae.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ae12e5c9629ecc96da2a0000a71f9dac6e9e4122.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b24692f8e6dcfbf9fb4606a87a7d47ba2e6839cf.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b2725457590bba52bd1ad010474b26ce0f495f47.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b274b110631b9ece868943b4ef97d39cae72beae.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b2e40693f270e5059be3c85806e9cf948e39d5b3.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b2ec9118bbc0ac308d206848b8e14b82329cbce9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b3ce5a0fd0e599c54975eea8947a8f2e5911c966.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b45a2cf6f3ea0e1d87d968398188ff1079289a06.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b6647ac9f5324c1ce3861b516c13e102a6f51a8e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b69f7e123688496bcf1f8171a2ab821d84f1a2ea.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b6cb8f80169b98c2cb1b08b4d035568eaa59c898.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b7178e40d75ec7eee0ea0109623d8cb4403fa2da.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b861ad9c23bbee1405d32ffff8cc099cc5db7804.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b8f2cfe8e98c6bfa54af651fdd7bd532c7ac8561.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b9cf28a9dee66ec4cca436d9bb00a5337f81a506.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bae010c7ad298b0f7c3aac9e32db63782f06f14e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bb3c9765fc6c9d0f38ef7b07abb812cab667eb18.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bc0b87aeb475a5f069956f1b8f969d920ec31834.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bc11dbcb241882025bc0f422d23d2c66d660f2f2.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bc8c665dbeea7bf7e32e4781e7c39d87190c9cd3.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bd27bbc26983fff76e4f2d7d526ce59fbad10e31.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bdf877711178b7e3423a1709460404a3e620ddf5.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c0c86bf364ccca6b6177ab4e9e7b67333f493b24.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c2d0c22a85b32b2e3c7d6e9a857f8fd5b7b7362e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c2fef9297b8d2c08e53539cea3d3ceef7aaa95e0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c69b3ad70d26ca191f8ff3c221500847c6f22579.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c6ea98bfea2336ea8ea0a0a88c847b5878e5a756.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c71415d81c46a69a0de789ddf4ee5e377200d76e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c80f53eaf6ad64ea98a2bb307b819b1e410f8d6a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c9f1bf6cfccb0adc4a242a26fb891758f865f3e1.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/caca03ad7c728aab003f0b0f8e81c9f41fbfa38b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cb87fec6cbd9538ee197e622c371d069994eb4f4.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cbd0a48d3a4e75bab0dcdbb1205b2aef980b726f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cc7fc89dad1028addf92aefb84eb4235a9154cd7.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cd28527cb04ac5af5ab771ed83eadcffb5345056.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cd964eb31ce799669f67eba4bffd4f5be45b49f2.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d13519d81284b26526b2cdde3aa24158d0ca2fcd.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d1485b2ad32a283dda1d2c3b7330a0d4581fcc70.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d1c3d895acd8cadb298c8bd3b292525f9436498a.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d2369d6d8d3295f81c133cd1f04766f8484a0a82.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d5681baa4550bac9b696035076efd8b346ed157c.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d655e7bf80e12a8a86ab94f4f1c58d90278bec87.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d87c2223062851db1c58e3c03c6bd7cec888a8b5.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dc65bd667044f16c045c0c0bd03d72eb914e43db.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dcbd3eb9ffde23c27322c6d10ee3052e24f267b7.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dd5b3c4c161b7c27d0ce01faff7666da635fbf5f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/de54717396e2611debcc6118a696f890d9639ed6.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/df12e11ee2c41086a41a8ac257d7a51fe48e13dd.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e0cf969b482eae8007bdaf8afa5f9f5d5448d981.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e0e74e1061be1edd64c7c0b7bca63f0137308970.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e1404f9f7f851e81078d787f3920d0f90541b603.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e190ccafb90ce400fabfe35d55f90542ee5c913f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e31a9c44c7b7011c8072ae39a7296ca77f95231b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e4cb8eb55790142d5737f811b7291c6ebba7d5d6.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e520ce5bc27cf19140530ad615dd83510305b23d.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e6c13a99fb6286d6012080fb5f295448db5b8222.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e99f995d81a80a362e80238decaa1b71feb1cafb.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ea45a66843aea59df9980e486bca670a62b2ad7f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/eb38102b8eeb573838b190fe1f8e24a14f8d8993.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ecb7b20a13fe563b1636b7fb97194c35dd56e2b1.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ef64c554d0672e4b0490c47b1139e384cdc30f96.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f2977c152cbc91efdbc0617036a47326ddc5cec9.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f2cfd5863e46edc8856e627832328f69f85d807b.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f5817e5d322b53836d0ff18b870bddd52f429dd2.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f6390fa72683c818626ea64ddf92d7bcd3360ad0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f78e554b5428f7cf4b92a152670064a19abe7ac0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f84c761be12d70b79c130911ad4737d55ff7893f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f9697f8b28d92310dbe8e2782d1f0bcdaa69d2d6.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fa5e98c4f65059f70f757ed5f1105455d1efd18f.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fc96f54ee23fedad774dc3a5245d742ead61af56.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fcac0323bd4e547a0abfacff42130138bde238f0.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fd8e576afc9f7ce49fd557e48ba3924c8af1ab2e.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fddc15423028d00208d778843e050c54596db973.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/feda5c401bb793809eafca444842f4fbda521b18.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fff5ae140cf8b165a5f3df3375f508df7f0e0a63.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LandingPage/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LandingPage/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LandingPage/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Navbar/NavbarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar/NavbarComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/SidebarContent/SidebarContent.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/SidebarContent/SidebarContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/UploadProblem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Navbar/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar/Login/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Navbar/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -272,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SolutionComponent.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SolutionComponent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="167" column="22" lean-forward="true" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
+            <state relative-caret-position="182">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -284,20 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SolutionComponent.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.css">
+      <file leaf-file-name="TitleAndDescription.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ColorSelector.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/ColorSelector/ColorSelector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="312">
+              <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -305,11 +51,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColorSelector.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/ColorSelector/ColorSelector.css">
+      <file leaf-file-name="InputAndOutput.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="-780">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProblemService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Services/ProblemService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadProblemPage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Navbar/Login/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1173">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Navbar/Login/Login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Services/LoginService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavbarComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Navbar/NavbarComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -319,8 +134,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -368,22 +183,25 @@
         <option value="$PROJECT_DIR$/src/LandingPage/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/LandingPage/Footer/Footer.css" />
         <option value="$PROJECT_DIR$/src/LandingPage/LandingPage.js" />
-        <option value="$PROJECT_DIR$/src/Navbar/Login/Login.css" />
-        <option value="$PROJECT_DIR$/src/Navbar/Login/Login.js" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/UploadProblemPage.js" />
-        <option value="$PROJECT_DIR$/src/Navbar/NavbarComponent.js" />
         <option value="$PROJECT_DIR$/src/Navbar/NavbarComponent.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.css" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.css" />
-        <option value="$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.css" />
-        <option value="$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js" />
-        <option value="$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.js" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/ColorSelector/ColorSelector.js" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/ColorSelector/ColorSelector.css" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.css" />
+        <option value="$PROJECT_DIR$/src/Services/constants.js" />
+        <option value="$PROJECT_DIR$/src/Navbar/Login/Login.css" />
+        <option value="$PROJECT_DIR$/src/Navbar/NavbarComponent.js" />
+        <option value="$PROJECT_DIR$/src/Services/LoginService.js" />
+        <option value="$PROJECT_DIR$/src/Navbar/Login/Login.js" />
+        <option value="$PROJECT_DIR$/src/Services/ProblemService.js" />
+        <option value="$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js" />
         <option value="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" />
+        <option value="$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js" />
+        <option value="$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.js" />
       </list>
     </option>
   </component>
@@ -398,10 +216,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="2025" />
-    <option name="height" value="1088" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -410,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -418,69 +236,11 @@
               <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
               <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Navbar" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UploadProblemPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UploadProblemPage" type="462c0819:PsiDirectoryNode" />
-              <item name="InputAndOutput" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UploadProblemPage" type="462c0819:PsiDirectoryNode" />
-              <item name="SolutionComponent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UploadProblemPage" type="462c0819:PsiDirectoryNode" />
-              <item name="SolutionComponent" type="462c0819:PsiDirectoryNode" />
-              <item name="ColorSelector" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licenta_react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licenta_react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UploadProblemPage" type="462c0819:PsiDirectoryNode" />
-              <item name="TitleAndDescription" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -544,27 +304,27 @@
       <workItem from="1526825967025" duration="13330000" />
       <workItem from="1527187126953" duration="74000" />
       <workItem from="1527246697673" duration="4295000" />
-      <workItem from="1527322926161" duration="28524000" />
+      <workItem from="1527322926161" duration="40625000" />
+      <workItem from="1528898390891" duration="26513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226990000" />
+    <option name="totallyTimeSpent" value="265604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18175809" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18175809" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32751092" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.41048035" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.40902475" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
@@ -575,6 +335,7 @@
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,27 +345,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Navbar/NavbarComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LandingPage/LandingScreen/LandingScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LandingPage/LandingScreen/LandingScreen.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -765,20 +505,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SidebarContent/SidebarContent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SidebarContent/SidebarContent.css" />
     <entry file="file://$PROJECT_DIR$/src/LandingPage/Footer/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,16 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Navbar/NavbarComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Navbar/Login/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LandingPage/About/About.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -848,23 +562,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SidebarContent/SidebarContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SidebarContent/SidebarContent.js" />
     <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -879,16 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LandingPage/LandingPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-289">
@@ -900,33 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Navbar/Login/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="102" column="13" selection-end-line="116" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -947,10 +608,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3484">
+          <caret line="134" column="16" lean-forward="true" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Navbar/Login/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Navbar/NavbarComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Navbar/Login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="167" column="22" lean-forward="true" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
+        <state relative-caret-position="182">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/TitleAndDescription/TitleAndDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/InputAndOutput/InputAndOutput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/LoginService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/ProblemService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/UploadProblemPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

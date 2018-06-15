@@ -3,7 +3,7 @@ import Draggable from "react-draggable";
 import "./SolutionComponent.css";
 import "react-contextmenu"
 import {ContextMenu, ContextMenuTrigger, MenuItem} from "react-contextmenu";
-import {Nav, NavItem, Panel} from "react-bootstrap";
+import {Button, Nav, NavItem, Panel} from "react-bootstrap";
 import {ColorSelector} from "./ColorSelector/ColorSelector";
 
 export class SolutionComponent extends Component {
@@ -43,7 +43,7 @@ export class SolutionComponent extends Component {
 
     render() {
         return (
-            <div style={{height: "570px"}}>
+            <div style={Object.assign({height: "570px"}, this.props.style)}>
                 <ContextMenu id="node_ctx_menu">
                     <MenuItem onClick={this.connectNodes.bind(this)}>
                         Connect to other node
@@ -51,7 +51,7 @@ export class SolutionComponent extends Component {
                     <MenuItem onClick={this.openColorModal.bind(this)}>
                         Change color
                     </MenuItem>
-                    <MenuItem onClick={this.connectNodes.bind(this)}>
+                    <MenuItem onClick={this.deleteNode.bind(this)}>
                         Delete
                     </MenuItem>
                 </ContextMenu>
@@ -125,6 +125,9 @@ export class SolutionComponent extends Component {
                             </Panel.Body>
                         </Panel.Collapse>
                     </Panel>
+                    <Button bsStyle={"success"} onClick={this.saveProblem.bind(this)}>
+                        SAVE
+                    </Button>
                 </div>
                 <div id="canvas" className="col-md-10 col-sm-9 col-xs-8"
                      style={{display: "inline-block", padding: "5px", height: "100%"}}
@@ -156,6 +159,11 @@ export class SolutionComponent extends Component {
                                changeColor={this.changeColor.bind(this)}/>
             </div>
         );
+    }
+
+    deleteNode(e, data, target) {
+        this.state.step[this.state.currentStep].nodes.splice(target.getAttribute("node_id"), 1);
+        this.forceUpdate();
     }
 
     copy(o) {
@@ -313,5 +321,41 @@ export class SolutionComponent extends Component {
                 this.updateEdge(secondNode.x, secondNode.y, ui.x, ui.y, edge.edgeId);
             }
         }
+    }
+
+    saveProblem() {
+        let requestSteps = [];
+        let actualSteps = this.state.step.slice(1, this.state.step.length);
+        for (let s of actualSteps) {
+            let requestNodes = [];
+            for (let n of s.nodes) {
+                let newNode = {
+                    positionX: n.x,
+                    positionY: n.y,
+                    size: 25,
+                    color: n.bgColor,
+                    value: "val",
+                    edges: []
+                };
+                for (let e of n.edges) {
+                    let ed = s.edges[e.edgeId];
+                    let newEdge = {
+                        left: parseInt(ed.left.split(".")[0].split("px")[0], 10),
+                        top: parseInt(ed.top.split(".")[0].split("px")[0], 10),
+                        rotation: parseFloat(ed.transform.split("rotate(")[1].split("deg")[0]),
+                        size: Math.round(ed.width),
+                        color: "#ff0000",
+                        value: "val",
+                        indexInList: e.edgeId,
+                        indexOfNode: e.nodeId,
+                        isFirst: e.isFirst ? "true" : "false"
+                    };
+                    newNode.edges.push(newEdge);
+                }
+                requestNodes.push(newNode);
+            }
+            requestSteps.push({nodes: requestNodes});
+        }
+        this.props.saveProblem(requestSteps);
     }
 }

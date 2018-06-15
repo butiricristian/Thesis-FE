@@ -4,6 +4,8 @@ import {Nav, NavItem, Panel} from "react-bootstrap";
 import {SolutionComponent} from "./SolutionComponent/SolutionComponent";
 import {InputAndOutput} from "./InputAndOutput/InputAndOutput";
 import {TitleAndDescription} from "./TitleAndDescription/TitleAndDescription";
+import {getCurrentUser} from "../Services/LoginService";
+import {postProblem} from "../Services/ProblemService";
 
 export class UploadProblemPage extends Component {
     constructor() {
@@ -11,19 +13,30 @@ export class UploadProblemPage extends Component {
         this.state={
             show1: true,
             show2: false,
-            show3: false
+            show3: false,
+            title: "",
+            description: "",
+            input: "",
+            output: "",
+            stepsRequest: ""
         }
     }
 
     changeTab(selected){
         switch(selected){
             case 1:
+                this.tad.setTitleAndDescription();
+                this.iao.setInputAndOutput();
                 this.setState({show1: true, show2: false, show3: false});
                 break;
             case 2:
+                this.tad.setTitleAndDescription();
+                this.iao.setInputAndOutput();
                 this.setState({show1: false, show2: true, show3: false});
                 break;
             case 3:
+                this.tad.setTitleAndDescription();
+                this.iao.setInputAndOutput();
                 this.setState({show1: false, show2: false, show3: true});
                 break;
             default:
@@ -50,12 +63,45 @@ export class UploadProblemPage extends Component {
                         </Nav>
                     </Panel.Heading>
                     <Panel.Body style={{padding: "0"}}>
-                        {this.state.show1 && <TitleAndDescription/>}
-                        {this.state.show2 && <InputAndOutput/>}
-                        {this.state.show3 && <SolutionComponent/>}
+                        <TitleAndDescription setTitleAndDescription={this.setTitleAndDescription.bind(this)} ref={instance => this.tad = instance} nextStep={this.nextStep.bind(this)} style={{display: this.state.show1 ? "block" : "none" }}/>
+                        <InputAndOutput setInputAndOutput={this.setInputAndOutput.bind(this)} ref={instance => this.iao = instance} nextStep={this.nextStep.bind(this)} style={{display: this.state.show2 ? "block" : "none" }}/>
+                        <SolutionComponent saveProblem={this.saveProblem.bind(this)} style={{display: this.state.show3 ? "block" : "none" }} />
                     </Panel.Body>
                 </Panel>
             </div>
         );
+    }
+
+    nextStep(x, param1, param2){
+        if(x === 2){
+            this.setState({title: param1, description: param2})
+        }
+        else if(x === 3){
+            this.setState({input: param1, output: param2})
+        }
+        this.changeTab(x)
+    }
+
+    saveProblem(requestSteps){
+        getCurrentUser().then(response => {
+            let problemRequest = {
+                title: this.state.title,
+                description: this.state.description,
+                exampleInput: this.state.input,
+                exampleOutput: this.state.output,
+                authorEmail: response.email,
+                steps: requestSteps
+            };
+            console.log(problemRequest);
+            postProblem(problemRequest)
+        });
+    }
+
+    setTitleAndDescription(param1, param2){
+        this.setState({title: param1, description: param2});
+    }
+
+    setInputAndOutput(param1, param2){
+        this.setState({input: param1, output: param2});
     }
 }
