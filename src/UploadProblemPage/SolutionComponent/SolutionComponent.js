@@ -20,7 +20,8 @@ export class SolutionComponent extends Component {
             colorModal: {
                 openModal: false,
                 selectedNode: 0
-            }
+            },
+            currentId: 0
         };
 
         this.sidebar = React.createRef();
@@ -219,7 +220,8 @@ export class SolutionComponent extends Component {
     }
 
     addNodeToCanvas(x, y) {
-        this.state.step[this.state.currentStep].nodes.push({x: x, y: y, edges: [], bgColor: "#03a9f4"});
+        this.state.step[this.state.currentStep].nodes.push({x: x, y: y, edges: [], bgColor: "#03a9f4", internalId: this.state.currentId});
+        this.setState({currentId: this.state.currentId + 1});
         this.forceUpdate();
     }
 
@@ -239,7 +241,8 @@ export class SolutionComponent extends Component {
             x: ui.x,
             y: ui.y,
             edges: crtEdges,
-            bgColor: tempNodePositions[e.target.getAttribute("data-node-id")].bgColor
+            bgColor: tempNodePositions[e.target.getAttribute("data-node-id")].bgColor,
+            internalId: tempNodePositions[e.target.getAttribute("data-node-id")].internalId
         };
         this.state.step[this.state.currentStep].nodes = tempNodePositions;
         this.forceUpdate();
@@ -292,19 +295,22 @@ export class SolutionComponent extends Component {
         this.updateEdge(posX1, posY1, posX2, posY2);
         const last = this.state.step[this.state.currentStep].edges.length - 1;
         const tmpNodes = this.state.step[this.state.currentStep].nodes;
-        tmpNodes[firstNodeId].edges.push({edgeId: last, nodeId: parseInt(secondNodeId, 10), isFirst: true});
-        tmpNodes[secondNodeId].edges.push({edgeId: last, nodeId: parseInt(firstNodeId, 10), isFirst: false});
+        tmpNodes[firstNodeId].edges.push({internalId: this.state.currentId, edgeId: last, nodeId: parseInt(secondNodeId, 10), isFirst: true});
+        tmpNodes[secondNodeId].edges.push({internalId: this.state.currentId, edgeId: last, nodeId: parseInt(firstNodeId, 10), isFirst: false});
+        this.setState({currentId: this.state.currentId + 1});
         tmpNodes[firstNodeId] = {
             x: posX1,
             y: posY1,
             edges: tmpNodes[firstNodeId].edges,
-            bgColor: tmpNodes[firstNodeId].bgColor
+            bgColor: tmpNodes[firstNodeId].bgColor,
+            internalId: tmpNodes[firstNodeId].internalId
         };
         tmpNodes[secondNodeId] = {
             x: posX2,
             y: posY2,
             edges: tmpNodes[secondNodeId].edges,
-            bgColor: tmpNodes[secondNodeId].bgColor
+            bgColor: tmpNodes[secondNodeId].bgColor,
+            internalId: tmpNodes[secondNodeId].internalId
         };
         this.forceUpdate();
     }
@@ -330,6 +336,7 @@ export class SolutionComponent extends Component {
             let requestNodes = [];
             for (let n of s.nodes) {
                 let newNode = {
+                    internalId: n.internalId,
                     positionX: n.x,
                     positionY: n.y,
                     size: 25,
@@ -346,6 +353,7 @@ export class SolutionComponent extends Component {
                         size: Math.round(ed.width),
                         color: "#ff0000",
                         value: "val",
+                        internalId: e.internalId,
                         indexInList: e.edgeId,
                         indexOfNode: e.nodeId,
                         isFirst: e.isFirst ? "true" : "false"

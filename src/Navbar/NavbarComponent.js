@@ -38,6 +38,9 @@ export class NavbarComponent extends Component {
                         <NavItem href="/upload-problem">
                             UPLOAD PROBLEM
                         </NavItem>
+                        <NavItem href="/problems">
+                            PROBLEMS
+                        </NavItem>
                         {/*<NavDropdown eventKey={3} title="DROPDOWN" id="basic-nav-dropdown">*/}
                             {/*<MenuItem eventKey={3.1}>ACTION</MenuItem>*/}
                             {/*<MenuItem eventKey={3.2}>ANOTHER ACTION</MenuItem>*/}

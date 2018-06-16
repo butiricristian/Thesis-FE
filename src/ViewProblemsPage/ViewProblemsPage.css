@@ -1,0 +1,30 @@
+.margin-top-6{
+    margin-top: 6em;
+    font-family: 'Raleway', sans-serif;
+}
+.card{
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
+.flat-header{
+    background-image: none !important;
+    background-color: #20a0ff !important;
+    color: #f8f8f8 !important;
+}
+
+.description{
+    font-size: 16px;
+    color: dimgrey;
+}
+
+.author{
+    font-size: 13px;
+    color: darkgrey;
+    float: right;
+}
+.details{
+    padding: 15px;
+}

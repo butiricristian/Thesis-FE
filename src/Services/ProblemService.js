@@ -8,3 +8,17 @@ export function postProblem(problemRequest) {
         body: JSON.stringify(problemRequest)
     });
 }
+
+export function getProblems(){
+    return request({
+        url: API_BASE_URL + "/problems",
+        method: 'GET',
+    })
+}
+
+export function getSingleProblem(id){
+    return request({
+        url: API_BASE_URL + "/problems/" + id,
+        method: 'GET',
+    })
+}
