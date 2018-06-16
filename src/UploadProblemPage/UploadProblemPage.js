@@ -5,12 +5,12 @@ import {SolutionComponent} from "./SolutionComponent/SolutionComponent";
 import {InputAndOutput} from "./InputAndOutput/InputAndOutput";
 import {TitleAndDescription} from "./TitleAndDescription/TitleAndDescription";
 import {getCurrentUser} from "../Services/LoginService";
-import {postProblem} from "../Services/ProblemService";
+import {getSingleProblem, postProblem} from "../Services/ProblemService";
 
 export class UploadProblemPage extends Component {
-    constructor() {
-        super();
-        this.state={
+    constructor(props) {
+        super(props);
+        this.state = {
             show1: true,
             show2: false,
             show3: false,
@@ -19,11 +19,25 @@ export class UploadProblemPage extends Component {
             input: "",
             output: "",
             stepsRequest: ""
+        };
+    }
+
+    componentDidMount() {
+        if (this.props.problem_id) {
+            getSingleProblem(this.props.problem_id).then(response => {
+                this.solComp.setInitialProblem(response);
+                this.setState({
+                    title: response.title,
+                    description: response.description,
+                    input: response.input,
+                    output: response.output
+                })
+            })
         }
     }
 
-    changeTab(selected){
-        switch(selected){
+    changeTab(selected) {
+        switch (selected) {
             case 1:
                 this.tad.setTitleAndDescription();
                 this.iao.setInputAndOutput();
@@ -63,26 +77,33 @@ export class UploadProblemPage extends Component {
                         </Nav>
                     </Panel.Heading>
                     <Panel.Body style={{padding: "0"}}>
-                        <TitleAndDescription setTitleAndDescription={this.setTitleAndDescription.bind(this)} ref={instance => this.tad = instance} nextStep={this.nextStep.bind(this)} style={{display: this.state.show1 ? "block" : "none" }}/>
-                        <InputAndOutput setInputAndOutput={this.setInputAndOutput.bind(this)} ref={instance => this.iao = instance} nextStep={this.nextStep.bind(this)} style={{display: this.state.show2 ? "block" : "none" }}/>
-                        <SolutionComponent saveProblem={this.saveProblem.bind(this)} style={{display: this.state.show3 ? "block" : "none" }} />
+                        <TitleAndDescription setTitleAndDescription={this.setTitleAndDescription.bind(this)}
+                                             ref={instance => this.tad = instance} nextStep={this.nextStep.bind(this)}
+                                             style={{display: this.state.show1 ? "block" : "none"}}
+                        />
+                        <InputAndOutput setInputAndOutput={this.setInputAndOutput.bind(this)}
+                                        ref={instance => this.iao = instance} nextStep={this.nextStep.bind(this)}
+                                        style={{display: this.state.show2 ? "block" : "none"}}/>
+                        <SolutionComponent ref={instance => this.solComp = instance}
+                                           saveProblem={this.saveProblem.bind(this)}
+                                           style={{display: this.state.show3 ? "block" : "none"}}/>
                     </Panel.Body>
                 </Panel>
             </div>
         );
     }
 
-    nextStep(x, param1, param2){
-        if(x === 2){
+    nextStep(x, param1, param2) {
+        if (x === 2) {
             this.setState({title: param1, description: param2})
         }
-        else if(x === 3){
+        else if (x === 3) {
             this.setState({input: param1, output: param2})
         }
         this.changeTab(x)
     }
 
-    saveProblem(requestSteps){
+    saveProblem(requestSteps) {
         getCurrentUser().then(response => {
             let problemRequest = {
                 title: this.state.title,
@@ -97,11 +118,11 @@ export class UploadProblemPage extends Component {
         });
     }
 
-    setTitleAndDescription(param1, param2){
+    setTitleAndDescription(param1, param2) {
         this.setState({title: param1, description: param2});
     }
 
-    setInputAndOutput(param1, param2){
+    setInputAndOutput(param1, param2) {
         this.setState({input: param1, output: param2});
     }
 }

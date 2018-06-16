@@ -4,15 +4,15 @@ import {Alert, Button, Col, ControlLabel, Form, FormControl, FormGroup} from "re
 
 export class TitleAndDescription extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             title: "",
             statement: "",
             success_message: "",
             error_message: ""
-        }
+        };
     }
 
     render() {

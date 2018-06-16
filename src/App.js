@@ -6,6 +6,7 @@ import {LandingPage} from "./LandingPage/LandingPage";
 import {UploadProblemPage} from "./UploadProblemPage/UploadProblemPage";
 import {ViewProblemsPage} from "./ViewProblemsPage/ViewProblemsPage";
 import {ViewSingleProblemPage} from "./ViewProblemsPage/ViewSingleProblemPage";
+import {EditProblemPage} from "./EditProblemPage/EditProblemPage";
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
                     <Route exact path="/upload-problem" component={UploadProblemPage}/>
                     <Route exact path="/problems" component={ViewProblemsPage}/>
                     <Route path="/problems/:id" component={ViewSingleProblemPage}/>
+                    <Route path="/editProblem/:id" component={EditProblemPage}/>
                 </Switch>
             </div>
         );

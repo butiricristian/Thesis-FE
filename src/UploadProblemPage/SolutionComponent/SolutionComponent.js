@@ -136,13 +136,13 @@ export class SolutionComponent extends Component {
                      onClick={this.removeIsEdgeDrawing.bind(this)}
                 >
                     <div>{this.state.step[this.state.currentStep].nodes.map(node => {
-                        const nodeId = this.state.step[this.state.currentStep].nodes.indexOf(node);
-                        return <ContextMenuTrigger attributes={{node_id: nodeId}} key={nodeId} id="node_ctx_menu">
+                        return <ContextMenuTrigger attributes={{node_id: node.internalId}} key={node.internalId}
+                                                   id="node_ctx_menu">
                             <Draggable onDrag={this.moveEdge.bind(this)} onStop={this.connectSecondNode.bind(this)}
                                        bounds="#canvas" position={{x: node.x, y: node.y}}>
-                                <div className="graphNode" data-node-id={nodeId}
+                                <div className="graphNode" data-node-id={node.internalId}
                                      style={{backgroundColor: node.bgColor, borderColor: node.bgColor}}>
-                                    {nodeId + 1}
+                                    {node.val}
                                 </div>
                             </Draggable>
                         </ContextMenuTrigger>
@@ -150,8 +150,7 @@ export class SolutionComponent extends Component {
                     }
                     </div>
                     <div>{this.state.step[this.state.currentStep].edges.map(edge => {
-                        const edgeId = this.state.step[this.state.currentStep].edges.indexOf(edge);
-                        return <div className="edge" style={edge} key={edgeId}>
+                        return <div className="edge" style={edge.style} key={edge.internalId}>
                         </div>
                     })}
                     </div>
@@ -163,7 +162,18 @@ export class SolutionComponent extends Component {
     }
 
     deleteNode(e, data, target) {
-        this.state.step[this.state.currentStep].nodes.splice(target.getAttribute("node_id"), 1);
+        let node = this.findNodeByInternalId(this.state.step[this.state.currentStep].nodes, target.getAttribute("node_id"));
+        for (let e of node.edges) {
+            let node2 = this.findNodeByInternalId(this.state.step[this.state.currentStep].nodes, e.nodeId);
+            let edgeToRemove = this.findEdgeByInternalId(node2.edges, e.internalId);
+            node2.edges.splice(node2.edges.indexOf(edgeToRemove), 1);
+            let idx = this.state.step[this.state.currentStep].edges.indexOf(
+                this.findEdgeByInternalId(this.state.step[this.state.currentStep].edges, e.internalId)
+            );
+            this.state.step[this.state.currentStep].edges.splice(idx, 1);
+        }
+        let idx = this.state.step[this.state.currentStep].nodes.indexOf(node);
+        this.state.step[this.state.currentStep].nodes.splice(idx, 1);
         this.forceUpdate();
     }
 
@@ -178,7 +188,7 @@ export class SolutionComponent extends Component {
     }
 
     changeColor(color) {
-        this.state.step[this.state.currentStep].nodes[this.state.colorModal.selectedNode].bgColor = color.hex;
+        this.findNodeByInternalId(this.state.step[this.state.currentStep].nodes, this.state.colorModal.selectedNode).bgColor = color.hex;
         this.forceUpdate();
     }
 
@@ -220,7 +230,15 @@ export class SolutionComponent extends Component {
     }
 
     addNodeToCanvas(x, y) {
-        this.state.step[this.state.currentStep].nodes.push({x: x, y: y, edges: [], bgColor: "#03a9f4", internalId: this.state.currentId});
+        let l = this.state.step[this.state.currentStep].nodes.length;
+        this.state.step[this.state.currentStep].nodes.push({
+            x: x,
+            y: y,
+            edges: [],
+            bgColor: "#03a9f4",
+            internalId: this.state.currentId,
+            val: l + 1
+        });
         this.setState({currentId: this.state.currentId + 1});
         this.forceUpdate();
     }
@@ -236,20 +254,25 @@ export class SolutionComponent extends Component {
 
     connectSecondNode(e, ui) {
         const tempNodePositions = this.state.step[this.state.currentStep].nodes;
-        const crtEdges = tempNodePositions[e.target.getAttribute("data-node-id")].edges;
-        tempNodePositions[e.target.getAttribute("data-node-id")] = {
-            x: ui.x,
-            y: ui.y,
-            edges: crtEdges,
-            bgColor: tempNodePositions[e.target.getAttribute("data-node-id")].bgColor,
-            internalId: tempNodePositions[e.target.getAttribute("data-node-id")].internalId
-        };
-        this.state.step[this.state.currentStep].nodes = tempNodePositions;
-        this.forceUpdate();
-        if (this.state.connectingNodes && this.state.connectingNodes.isConnecting === true) {
-            const firstNode = this.state.step[this.state.currentStep].nodes[this.state.connectingNodes.firstNodeId];
-            this.drawEdge(firstNode.x, firstNode.y, ui.x, ui.y, this.state.connectingNodes.firstNodeId, e.target.getAttribute("data-node-id"));
-            this.setState({connectingNodes: {connectingNodes: false}})
+        if (e.target.getAttribute("data-node-id")) {
+            let node = this.findNodeByInternalId(tempNodePositions, e.target.getAttribute("data-node-id"));
+            const crtEdges = node.edges;
+            let idx = tempNodePositions.indexOf(node);
+            tempNodePositions[idx] = {
+                x: ui.x,
+                y: ui.y,
+                edges: crtEdges,
+                bgColor: node.bgColor,
+                internalId: node.internalId,
+                val: node.val
+            };
+            this.state.step[this.state.currentStep].nodes = tempNodePositions;
+            this.forceUpdate();
+            if (this.state.connectingNodes && this.state.connectingNodes.isConnecting === true) {
+                const firstNode = this.findNodeByInternalId(this.state.step[this.state.currentStep].nodes, this.state.connectingNodes.firstNodeId);
+                this.drawEdge(firstNode.x, firstNode.y, ui.x, ui.y, this.state.connectingNodes.firstNodeId, e.target.getAttribute("data-node-id"));
+                this.setState({connectingNodes: {connectingNodes: false}})
+            }
         }
     }
 
@@ -280,51 +303,70 @@ export class SolutionComponent extends Component {
             width: length,
             transform: "rotate(" + rotAngle + "deg)"
         };
-        if (edgeId != null) {
+        if (edgeId !== this.state.currentId) {
             const tmpEdges = this.state.step[this.state.currentStep].edges;
-            tmpEdges[edgeId] = edgeStyles;
+            let idx = tmpEdges.indexOf(this.findEdgeByInternalId(tmpEdges, edgeId));
+            tmpEdges[idx] = {
+                internalId: edgeId,
+                style: edgeStyles
+            };
             this.forceUpdate();
         }
         else {
-            this.state.step[this.state.currentStep].edges.push(edgeStyles);
+            this.state.step[this.state.currentStep].edges.push({
+                internalId: this.state.currentId,
+                style: edgeStyles
+            });
             this.forceUpdate();
         }
     }
 
     drawEdge(posX1, posY1, posX2, posY2, firstNodeId, secondNodeId) {
-        this.updateEdge(posX1, posY1, posX2, posY2);
+        this.updateEdge(posX1, posY1, posX2, posY2, this.state.currentId);
         const last = this.state.step[this.state.currentStep].edges.length - 1;
         const tmpNodes = this.state.step[this.state.currentStep].nodes;
-        tmpNodes[firstNodeId].edges.push({internalId: this.state.currentId, edgeId: last, nodeId: parseInt(secondNodeId, 10), isFirst: true});
-        tmpNodes[secondNodeId].edges.push({internalId: this.state.currentId, edgeId: last, nodeId: parseInt(firstNodeId, 10), isFirst: false});
+        this.findNodeByInternalId(tmpNodes, firstNodeId).edges.push({
+            internalId: this.state.currentId,
+            nodeId: parseInt(secondNodeId, 10),
+            isFirst: true
+        });
+        this.findNodeByInternalId(tmpNodes, secondNodeId).edges.push({
+            internalId: this.state.currentId,
+            nodeId: parseInt(firstNodeId, 10),
+            isFirst: false
+        });
         this.setState({currentId: this.state.currentId + 1});
-        tmpNodes[firstNodeId] = {
+        let node1 = this.findNodeByInternalId(tmpNodes, firstNodeId);
+        let node2 = this.findNodeByInternalId(tmpNodes, secondNodeId);
+        node1 = {
             x: posX1,
             y: posY1,
-            edges: tmpNodes[firstNodeId].edges,
-            bgColor: tmpNodes[firstNodeId].bgColor,
-            internalId: tmpNodes[firstNodeId].internalId
+            edges: node1.edges,
+            bgColor: node1.bgColor,
+            internalId: node1.internalId,
+            val: node1.val
         };
-        tmpNodes[secondNodeId] = {
+        node2 = {
             x: posX2,
             y: posY2,
-            edges: tmpNodes[secondNodeId].edges,
-            bgColor: tmpNodes[secondNodeId].bgColor,
-            internalId: tmpNodes[secondNodeId].internalId
+            edges: node2.edges,
+            bgColor: node2.bgColor,
+            internalId: node2.internalId,
+            val: node2.val
         };
         this.forceUpdate();
     }
 
     moveEdge(e, ui) {
         const nodeId = parseInt(ui.node.getAttribute("data-node-id"), 10);
-        const node = this.state.step[this.state.currentStep].nodes[nodeId];
+        const node = this.findNodeByInternalId(this.state.step[this.state.currentStep].nodes, nodeId);
         for (let edge of node.edges) {
-            let secondNode = this.state.step[this.state.currentStep].nodes[edge.nodeId];
+            let secondNode = this.findNodeByInternalId(this.state.step[this.state.currentStep].nodes, edge.nodeId);
             if (edge.isFirst) {
-                this.updateEdge(ui.x, ui.y, secondNode.x, secondNode.y, edge.edgeId);
+                this.updateEdge(ui.x, ui.y, secondNode.x, secondNode.y, edge.internalId);
             }
             else {
-                this.updateEdge(secondNode.x, secondNode.y, ui.x, ui.y, edge.edgeId);
+                this.updateEdge(secondNode.x, secondNode.y, ui.x, ui.y, edge.internalId);
             }
         }
     }
@@ -341,20 +383,19 @@ export class SolutionComponent extends Component {
                     positionY: n.y,
                     size: 25,
                     color: n.bgColor,
-                    value: "val",
+                    value: n.val,
                     edges: []
                 };
                 for (let e of n.edges) {
-                    let ed = s.edges[e.edgeId];
+                    let ed = this.findEdgeByInternalId(s.edges, e.internalId);
                     let newEdge = {
-                        left: parseInt(ed.left.split(".")[0].split("px")[0], 10),
-                        top: parseInt(ed.top.split(".")[0].split("px")[0], 10),
-                        rotation: parseFloat(ed.transform.split("rotate(")[1].split("deg")[0]),
-                        size: Math.round(ed.width),
-                        color: "#ff0000",
+                        left: parseInt(ed.style.left.split(".")[0].split("px")[0], 10),
+                        top: parseInt(ed.style.top.split(".")[0].split("px")[0], 10),
+                        rotation: parseFloat(ed.style.transform.split("rotate(")[1].split("deg")[0]),
+                        size: Math.round(ed.style.width),
+                        color: "indianred",
                         value: "val",
                         internalId: e.internalId,
-                        indexInList: e.edgeId,
                         indexOfNode: e.nodeId,
                         isFirst: e.isFirst ? "true" : "false"
                     };
@@ -365,5 +406,70 @@ export class SolutionComponent extends Component {
             requestSteps.push({nodes: requestNodes});
         }
         this.props.saveProblem(requestSteps);
+    }
+
+    setInitialProblem(problem) {
+        let steps = [{}];
+        let dummySteps = ["+"];
+        let k = 1;
+        for (let s of problem.steps) {
+            let nodes = [];
+            let edges = [];
+            for (let n of s.nodes) {
+                let newNode = {
+                    x: n.positionX,
+                    y: n.positionY,
+                    edges: [],
+                    bgColor: n.color,
+                    internalId: n.internalId,
+                    val: n.val
+                };
+                for (let e of n.edges) {
+                    let newNodeEdge = {
+                        internalId: e.internalId,
+                        nodeId: e.indexOfNode,
+                        isFirst: e.isFirst === "true"
+                    };
+                    let newNodeStyle = {
+                        internalId: e.internalId,
+                        style: {
+                            position: "absolute",
+                            top: e.top + "px",
+                            left: e.left + "px",
+                            width: e.size,
+                            transform: "rotate(" + e.rotation + "deg)"
+                        }
+                    };
+                    newNode.edges.push(newNodeEdge);
+                    if(this.findEdgeByInternalId(edges, e.internalId) == null){
+                        edges.push(newNodeStyle);
+                    }
+                }
+                nodes.push(newNode)
+            }
+            steps.push({nodes: nodes, edges: edges});
+            dummySteps.push(k.toString());
+            k=k+1;
+        }
+        this.setState({step: steps, steps: dummySteps});
+        console.log(this.state.step)
+    }
+
+    findEdgeByInternalId(edges, id) {
+        for (let e of edges) {
+            if (e.internalId === id) {
+                return e;
+            }
+        }
+        return null
+    }
+
+    findNodeByInternalId(nodes, id) {
+        for (let n of nodes) {
+            if (n.internalId === parseInt(id, 10)) {
+                return n;
+            }
+        }
+        return null
     }
 }

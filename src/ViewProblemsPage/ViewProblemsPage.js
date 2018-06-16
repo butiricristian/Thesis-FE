@@ -1,16 +1,21 @@
 import React, {Component} from 'react';
 import "./ViewProblemsPage.css";
 import {getProblems} from "../Services/ProblemService";
-import {Col, Panel} from "react-bootstrap";
+import {Button, Col, Panel} from "react-bootstrap";
+import {getCurrentUser} from "../Services/LoginService";
 
 export class ViewProblemsPage extends Component {
     constructor() {
         super();
         this.state = {
-            problems: []
+            problems: [],
+            crtUser: ""
         };
         getProblems().then(response => {
             this.setState({problems: response});
+        })
+        getCurrentUser().then(response =>{
+            this.setState({user: response})
         })
     }
 
@@ -36,6 +41,13 @@ export class ViewProblemsPage extends Component {
                                         {p.authorEmail}
                                     </p>
                                 </Panel.Body>
+                                {
+                                    p.authorEmail === this.state.user.email &&
+                                    <Panel.Footer>
+                                        <Button href={"/editProblem/" + p.id} style={{marginRight: "5px"}} bsStyle="primary">Edit</Button>
+                                        <Button problem_id = {p.id} bsStyle="danger">Delete</Button>
+                                    </Panel.Footer>
+                                }
                             </Panel>
                         </Col>
                     )

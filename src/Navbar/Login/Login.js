@@ -41,7 +41,6 @@ export class Login extends Component {
         };
         signup(signupRequest)
             .then(response => {
-                console.log(response);
                 this.setState({
                     signup: {
                         name: this.state.signup.name,
@@ -53,7 +52,6 @@ export class Login extends Component {
                     }
                 })
             }).catch(error => {
-            console.log(error);
             this.setState({
                 signup: {
                     name: this.state.signup.name,
