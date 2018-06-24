@@ -12,7 +12,6 @@ class App extends Component {
     render() {
         return (
             <div>
-                <NavbarComponent/>
                 <Switch>
                     <Route exact path="/" component={LandingPage}/>
                     <Route exact path="/upload-problem" component={UploadProblemPage}/>

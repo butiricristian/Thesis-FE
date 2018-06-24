@@ -13,6 +13,7 @@ export class ColorSelector extends Component {
 
     changeColor(color) {
         this.setState({headerColor: color.hex});
+        color.array_internal_id = this.props.array_internal_id;
         this.props.changeColor(color);
     }
 

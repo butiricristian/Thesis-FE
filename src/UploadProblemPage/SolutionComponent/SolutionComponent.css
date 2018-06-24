@@ -170,3 +170,36 @@
 .solution-sidebar .panel{
     border: none;
 }
+
+.draggable{
+    display: inline-block;
+    position: absolute;
+}
+
+.arrayElement{
+    display: table-cell;
+    color: #20a0ff;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 2px #20a0ff;
+    background-color: #f8f8f8;
+    font-weight: bolder;
+    font-size: 16px;
+    position: absolute;
+    z-index: 2;
+}
+.array-size-panel .modal-body{
+    padding: 10px !important;
+    text-align: center;
+}
+.array-size-panel .modal-header{
+    background: #20a0ff;
+    color: whitesmoke;
+    font-size: 20px;
+    transition: background-color 0.5s;
+}
+#array_bounds{
+    display: inline-block;
+}

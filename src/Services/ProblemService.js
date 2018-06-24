@@ -22,3 +22,10 @@ export function getSingleProblem(id){
         method: 'GET',
     })
 }
+
+export function deleteProblem(id) {
+    return request({
+        url: API_BASE_URL + "/problems/" + id,
+        method: 'DELETE'
+    })
+}

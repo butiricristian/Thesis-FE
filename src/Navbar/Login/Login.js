@@ -72,7 +72,6 @@ export class Login extends Component {
             usernameOrEmail: this.state.login.usernameOrEmail,
             password: this.state.login.password
         };
-        console.log(logInRequest);
         login(logInRequest)
             .then(response => {
                 localStorage.setItem(ACCESS_TOKEN, response.accessToken);
@@ -84,7 +83,8 @@ export class Login extends Component {
                         success_message: "Login successful!",
                         error_message: ""
                     }
-                })
+                });
+                this.props.updateLogin();
             }).catch(error => {
             console.log(error);
             this.setState({

@@ -10,9 +10,9 @@
 }
 
 .problem-title-container{
-    height: 300px;
     background: linear-gradient(to bottom right, #20a0ff, #D585FF);
     padding-top: 5%;
+    padding-bottom: 8%;
 }
 
 .details-container{

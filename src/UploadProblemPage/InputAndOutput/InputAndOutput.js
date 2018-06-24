@@ -47,7 +47,7 @@ export class InputAndOutput extends Component {
                             <FormControl componentClass="textarea"
                                          style={{height: "200px"}}
                                          placeholder="Example Output"
-                                         value={this.state.description}
+                                         value={this.state.output}
                                          onChange={
                                              (val) => this.setState({
                                                  output: val.target.value,
@@ -103,4 +103,9 @@ export class InputAndOutput extends Component {
     setInputAndOutput(){
         this.props.setInputAndOutput(this.state.input, this.state.output)
     }
+
+    editInputAndOutput(input, output){
+        this.setState({input: input, output: output})
+    }
+
 }

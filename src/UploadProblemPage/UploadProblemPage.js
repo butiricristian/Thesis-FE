@@ -6,6 +6,7 @@ import {InputAndOutput} from "./InputAndOutput/InputAndOutput";
 import {TitleAndDescription} from "./TitleAndDescription/TitleAndDescription";
 import {getCurrentUser} from "../Services/LoginService";
 import {getSingleProblem, postProblem} from "../Services/ProblemService";
+import {NavbarComponent} from "../Navbar/NavbarComponent";
 
 export class UploadProblemPage extends Component {
     constructor(props) {
@@ -26,12 +27,8 @@ export class UploadProblemPage extends Component {
         if (this.props.problem_id) {
             getSingleProblem(this.props.problem_id).then(response => {
                 this.solComp.setInitialProblem(response);
-                this.setState({
-                    title: response.title,
-                    description: response.description,
-                    input: response.input,
-                    output: response.output
-                })
+                this.tad.editTitleAndDescription(response.title, response.description);
+                this.iao.editInputAndOutput(response.exampleInput, response.exampleOutput);
             })
         }
     }
@@ -61,34 +58,38 @@ export class UploadProblemPage extends Component {
 
     render() {
         return (
-            <div className="container-fluid background">
-                <Panel className="main-panel">
-                    <Panel.Heading className="upload-problem-tabs">
-                        <Nav justified bsStyle="pills" onSelect={this.changeTab.bind(this)}>
-                            <NavItem eventKey={1} active={this.state.show1}>
-                                Title & Problem statement
-                            </NavItem>
-                            <NavItem eventKey={2} active={this.state.show2}>
-                                Example input and output
-                            </NavItem>
-                            <NavItem eventKey={3} active={this.state.show3}>
-                                Visual solution
-                            </NavItem>
-                        </Nav>
-                    </Panel.Heading>
-                    <Panel.Body style={{padding: "0"}}>
-                        <TitleAndDescription setTitleAndDescription={this.setTitleAndDescription.bind(this)}
-                                             ref={instance => this.tad = instance} nextStep={this.nextStep.bind(this)}
-                                             style={{display: this.state.show1 ? "block" : "none"}}
-                        />
-                        <InputAndOutput setInputAndOutput={this.setInputAndOutput.bind(this)}
-                                        ref={instance => this.iao = instance} nextStep={this.nextStep.bind(this)}
-                                        style={{display: this.state.show2 ? "block" : "none"}}/>
-                        <SolutionComponent ref={instance => this.solComp = instance}
-                                           saveProblem={this.saveProblem.bind(this)}
-                                           style={{display: this.state.show3 ? "block" : "none"}}/>
-                    </Panel.Body>
-                </Panel>
+            <div>
+                <NavbarComponent history={this.props.history}/>
+                <div className="container-fluid background">
+                    <Panel className="main-panel">
+                        <Panel.Heading className="upload-problem-tabs">
+                            <Nav justified bsStyle="pills" onSelect={this.changeTab.bind(this)}>
+                                <NavItem eventKey={1} active={this.state.show1}>
+                                    Title & Problem statement
+                                </NavItem>
+                                <NavItem eventKey={2} active={this.state.show2}>
+                                    Example input and output
+                                </NavItem>
+                                <NavItem eventKey={3} active={this.state.show3}>
+                                    Visual solution
+                                </NavItem>
+                            </Nav>
+                        </Panel.Heading>
+                        <Panel.Body style={{padding: "0"}}>
+                            <TitleAndDescription setTitleAndDescription={this.setTitleAndDescription.bind(this)}
+                                                 ref={instance => this.tad = instance}
+                                                 nextStep={this.nextStep.bind(this)}
+                                                 style={{display: this.state.show1 ? "block" : "none"}}
+                            />
+                            <InputAndOutput setInputAndOutput={this.setInputAndOutput.bind(this)}
+                                            ref={instance => this.iao = instance} nextStep={this.nextStep.bind(this)}
+                                            style={{display: this.state.show2 ? "block" : "none"}}/>
+                            <SolutionComponent ref={instance => this.solComp = instance}
+                                               saveProblem={this.saveProblem.bind(this)}
+                                               style={{display: this.state.show3 ? "block" : "none"}}/>
+                        </Panel.Body>
+                    </Panel>
+                </div>
             </div>
         );
     }
@@ -106,6 +107,7 @@ export class UploadProblemPage extends Component {
     saveProblem(requestSteps) {
         getCurrentUser().then(response => {
             let problemRequest = {
+                id: this.props.problem_id || null,
                 title: this.state.title,
                 description: this.state.description,
                 exampleInput: this.state.input,
@@ -113,8 +115,9 @@ export class UploadProblemPage extends Component {
                 authorEmail: response.email,
                 steps: requestSteps
             };
-            console.log(problemRequest);
-            postProblem(problemRequest)
+            postProblem(problemRequest).then(() => {
+                this.props.history.push("/problems");
+            });
         });
     }
 

@@ -45,7 +45,7 @@ export class TitleAndDescription extends Component {
                             <FormControl componentClass="textarea"
                                          style={{height: "300px"}}
                                          placeholder="Description"
-                                         value={this.state.description}
+                                         value={this.state.statement}
                                          onChange={
                                              (val) => this.setState({
                                                  statement: val.target.value,
@@ -100,5 +100,9 @@ export class TitleAndDescription extends Component {
 
     setTitleAndDescription(){
         this.props.setTitleAndDescription(this.state.title, this.state.statement);
+    }
+
+    editTitleAndDescription(title, desc){
+        this.setState({title: title, statement: desc})
     }
 }
