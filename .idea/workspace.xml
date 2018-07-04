@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69daea5-9de6-4358-b201-e94d06cd7c29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ViewProblemsPage/AnimationCanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewProblemsPage/AnimationCanvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,23 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SolutionComponent.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SolutionComponent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
-              <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+              <caret line="268" column="97" selection-start-line="268" selection-start-column="97" selection-end-line="268" selection-end-column="97" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -103,11 +91,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnimationCanvas.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnimationCanvas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ViewProblemsPage/AnimationCanvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="1465">
               <caret line="88" column="163" selection-start-line="88" selection-start-column="163" selection-end-line="88" selection-end-column="163" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewProblemsPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ViewProblemsPage/ViewProblemsPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1586">
+              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -221,10 +221,10 @@
         <option value="$PROJECT_DIR$/src/LandingPage/Footer/Footer.css" />
         <option value="$PROJECT_DIR$/src/LandingPage/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/Services/constants.js" />
-        <option value="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/ViewProblemsPage/AnimationCanvas.css" />
         <option value="$PROJECT_DIR$/src/ViewProblemsPage/AnimationCanvas.js" />
+        <option value="$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js" />
       </list>
     </option>
   </component>
@@ -345,12 +345,12 @@
       <workItem from="1527246697673" duration="4295000" />
       <workItem from="1527322926161" duration="40625000" />
       <workItem from="1528898390891" duration="196910000" />
-      <workItem from="1530687597566" duration="1477000" />
+      <workItem from="1530687597566" duration="2795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437478000" />
+    <option name="totallyTimeSpent" value="438796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -564,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ViewProblemsPage/ViewProblemsPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Navbar/NavbarComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="962">
@@ -653,16 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ViewProblemsPage/ViewSingleProblemPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-254">
@@ -689,8 +672,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ViewProblemsPage/AnimationCanvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="1465">
           <caret line="88" column="163" selection-start-line="88" selection-start-column="163" selection-end-line="88" selection-end-column="163" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ViewProblemsPage/ViewProblemsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1586">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UploadProblemPage/SolutionComponent/SolutionComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="268" column="97" selection-start-line="268" selection-start-column="97" selection-end-line="268" selection-end-column="97" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

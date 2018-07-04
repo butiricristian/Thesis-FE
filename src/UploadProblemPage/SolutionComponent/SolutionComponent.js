@@ -266,7 +266,7 @@ export class SolutionComponent extends Component {
                                             }}>
                                                 {array.elements.map(el => {
                                                     return (
-                                                        <ContextMenuTrigger holdToDisplay={-1}
+                                                        <ContextMenuTrigger holdToDisplay={200000}
                                                             attributes={{
                                                                 element_id: el.internalId,
                                                                 array_internal_id: array.internalId
