@@ -86,7 +86,7 @@ export class AnimationCanvas extends Component {
                         const edgeId = this.state.edges.indexOf(edge);
                         return <div className="edge"
                                     style={Object.assign({
-                                        transition: "width 1s ease-in 1s, top 1s ease-in, left 1s ease-in, transform 1s, background-color 1s, border 1s",
+                                        transition: "width 1s ease-in 1s, top 1s ease-in, left 1s ease-in, transform 1s, background-color 1s, border 1s, opacity 1s",
                                         textAlign: "center"
                                     }, edge.style)}
                                     key={edgeId}>
@@ -173,7 +173,8 @@ export class AnimationCanvas extends Component {
                             width: 0,
                             transform: "rotate(" + e.rotation + "deg)",
                             backgroundColor: "transparent",
-                            borderColor: "transparent"
+                            borderColor: "transparent",
+                            opacity: 0
                         };
                         edges.push(e);
                     }
@@ -319,7 +320,8 @@ export class AnimationCanvas extends Component {
                         width: e.size,
                         transform: "rotate(" + e.rotation + "deg)",
                         backgroundColor: e.color,
-                        borderColor: e.color
+                        borderColor: e.color,
+                        opacity: 1
                     };
                 }
                 else {
@@ -332,7 +334,8 @@ export class AnimationCanvas extends Component {
                         width: e.size,
                         transform: "rotate(" + e.rotation + "deg)",
                         backgroundColor: e.color,
-                        borderColor: e.color
+                        borderColor: e.color,
+                        opacity: 1
                     };
                 }
             }
@@ -353,7 +356,8 @@ export class AnimationCanvas extends Component {
                         width: 0,
                         transform: "rotate(" + e.rotation + "deg)",
                         backgroundColor: "transparent",
-                        borderColor: "transparent"
+                        borderColor: "transparent",
+                        opacity: 0
                     }
                 }
             }
@@ -471,7 +475,8 @@ export class AnimationCanvas extends Component {
                     width: 0,
                     transform: "rotate(" + e.rotation + "deg)",
                     backgroundColor: "transparent",
-                    borderColor: "transparent"
+                    borderColor: "transparent",
+                    opacity: 0
                 }
             }
             for (let e of crtEdges) {
@@ -484,7 +489,8 @@ export class AnimationCanvas extends Component {
                     width: e.size,
                     transform: "rotate(" + e.rotation + "deg)",
                     backgroundColor: e.color,
-                    borderColor: e.color
+                    borderColor: e.color,
+                    opacity: 1
                 };
             }
 
