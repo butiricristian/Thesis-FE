@@ -25,13 +25,13 @@ export class AnimationCanvas extends Component {
     increaseStep() {
         if (this.state.currentStep < this.state.nrSteps - 1) {
             this.setState((prevState) => {
-                this.loadAnimation(null, prevState.currentStep + 1);
+                this.loadAnimation(null, prevState.currentStep + 1, -1);
                 return {currentStep: this.state.currentStep + 1}
             })
         }
         else {
             this.setState(() => {
-                this.loadAnimation(null, 0);
+                this.loadAnimation(null, 0, -1);
                 return {currentStep: 0}
             })
         }
@@ -40,13 +40,13 @@ export class AnimationCanvas extends Component {
     decreaseStep() {
         if (this.state.currentStep > 0 ) {
             this.setState((prevState) => {
-                this.loadAnimation(null, prevState.currentStep - 1);
+                this.loadAnimation(null, prevState.currentStep - 1, 1);
                 return {currentStep: this.state.currentStep - 1}
             })
         }
         else {
             this.setState(() => {
-                this.loadAnimation(null, this.state.nrSteps - 1);
+                this.loadAnimation(null, this.state.nrSteps - 1, 1);
                 return {currentStep: this.state.nrSteps - 1}
             })
         }
@@ -229,7 +229,7 @@ export class AnimationCanvas extends Component {
 
     }
 
-    loadAnimation(prob, crtStep) {
+    loadAnimation(prob, crtStep, prevOrNext) {
         let currentStep = crtStep;
         let problem = null;
         if (prob != null) {
@@ -239,9 +239,10 @@ export class AnimationCanvas extends Component {
             problem = this.state.problem;
         }
         if (currentStep > 0) {
+            let prevStep = currentStep + prevOrNext > this.state.nrSteps - 1 ? 0 : currentStep + prevOrNext;
             for (let n of problem.steps[currentStep].nodes) {
                 let addNode = true;
-                for (let n2 of problem.steps[currentStep - 1].nodes) {
+                for (let n2 of problem.steps[prevStep].nodes) {
                     if (n.internalId === n2.internalId) {
                         addNode = false;
                     }
@@ -267,7 +268,7 @@ export class AnimationCanvas extends Component {
                     };
                 }
             }
-            for (let n of problem.steps[currentStep - 1].nodes) {
+            for (let n of problem.steps[prevStep].nodes) {
                 let addNode = true;
                 for (let n2 of problem.steps[currentStep].nodes) {
                     if (n.internalId === n2.internalId) {
@@ -295,7 +296,7 @@ export class AnimationCanvas extends Component {
                     }
                 }
             }
-            for (let n of problem.steps[currentStep - 1].nodes) {
+            for (let n of problem.steps[prevStep].nodes) {
                 for (let e of n.edges) {
                     if (this.getEdgeById(prevEdges, e.internalId) == null) {
                         prevEdges.push(e)
@@ -364,7 +365,7 @@ export class AnimationCanvas extends Component {
 
             for (let a of problem.steps[currentStep].arrays) {
                 let addArray = true;
-                for (let a2 of problem.steps[currentStep - 1].arrays) {
+                for (let a2 of problem.steps[prevStep].arrays) {
                     if (a.internalId === a2.internalId) {
                         addArray = false;
                     }
@@ -405,7 +406,7 @@ export class AnimationCanvas extends Component {
                     }
                 }
             }
-            for (let a of problem.steps[currentStep - 1].arrays) {
+            for (let a of problem.steps[prevStep].arrays) {
                 let addArray = true;
                 for (let a2 of problem.steps[currentStep].arrays) {
                     if (a.internalId === a2.internalId) {

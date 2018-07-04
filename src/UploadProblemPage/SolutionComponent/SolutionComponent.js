@@ -942,7 +942,6 @@ export class SolutionComponent extends Component {
             edges: this.copy(step.edges.slice(0)),
             arrays: this.copy(step.arrays.slice(0))
         });
-        console.log(this.state.step)
         this.forceUpdate();
     }
 }
