@@ -174,20 +174,6 @@ export class SolutionComponent extends Component {
                     <Panel bsStyle={"info"}>
                         <Panel.Heading>
                             <Panel.Title toggle>
-                                Matrix elements
-                            </Panel.Title>
-                        </Panel.Heading>
-                        <Panel.Collapse>
-                            <Panel.Body>
-                                <div className="matrix">
-                                    {"Matrix"}
-                                </div>
-                            </Panel.Body>
-                        </Panel.Collapse>
-                    </Panel>
-                    <Panel bsStyle={"info"}>
-                        <Panel.Heading>
-                            <Panel.Title toggle>
                                 Animations
                             </Panel.Title>
                         </Panel.Heading>
@@ -201,7 +187,7 @@ export class SolutionComponent extends Component {
                                                 const s = this.state.step.indexOf(step);
                                                 return (
                                                     <NavItem key={s} eventKey={s}>
-                                                        <ContextMenuTrigger attributes={{step_id: s}} id={"step_ctx_menu"}>
+                                                        <ContextMenuTrigger holdToDisplay={-1} attributes={{step_id: s}} id={"step_ctx_menu"}>
                                                             {"Step " + s}
                                                         </ContextMenuTrigger>
                                                     </NavItem>
@@ -228,7 +214,8 @@ export class SolutionComponent extends Component {
                      onClick={this.removeIsEdgeDrawing.bind(this)}
                 >
                     <div>{this.state.step[this.state.currentStep].nodes.map(node => {
-                        return <ContextMenuTrigger attributes={{node_id: node.internalId}}
+                        return <ContextMenuTrigger holdToDisplay={-1}
+                                                   attributes={{node_id: node.internalId}}
                                                    key={node.internalId}
                                                    id="node_ctx_menu">
                             <Draggable onDrag={this.moveEdge.bind(this)}
@@ -245,7 +232,8 @@ export class SolutionComponent extends Component {
                     </div>
                     <div>{this.state.step[this.state.currentStep].edges.map(edge => {
                         return (
-                            <ContextMenuTrigger attributes={{edge_id: edge.internalId}} key={edge.internalId}
+                            <ContextMenuTrigger holdToDisplay={-1}
+                                                attributes={{edge_id: edge.internalId}} key={edge.internalId}
                                                 id="edge_ctx_menu">
                                 <div className="edge" style={Object.assign({
                                     backgroundColor: edge.color,
@@ -278,7 +266,7 @@ export class SolutionComponent extends Component {
                                             }}>
                                                 {array.elements.map(el => {
                                                     return (
-                                                        <ContextMenuTrigger
+                                                        <ContextMenuTrigger holdToDisplay={-1}
                                                             attributes={{
                                                                 element_id: el.internalId,
                                                                 array_internal_id: array.internalId

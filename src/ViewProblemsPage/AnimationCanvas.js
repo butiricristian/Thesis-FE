@@ -59,7 +59,7 @@ export class AnimationCanvas extends Component {
                     <p>
                         {"Current step: " + this.state.currentStep}
                     </p>
-                    <ButtonGroup>
+                    <ButtonGroup className="animation-buttons">
                         <Button bsStyle={"success"} onClick={this.decreaseStep.bind(this)}><i className="fa fa-backward"/></Button>
                         <Button bsStyle={"success"} onClick={() => {this.stepIncreaser = setInterval(this.increaseStep.bind(this), 3000);}}><i className="fa fa-play"/></Button>
                         <Button bsStyle={"success"} onClick={() => {clearInterval(this.stepIncreaser)}}><i className="fa fa-pause"/></Button>
